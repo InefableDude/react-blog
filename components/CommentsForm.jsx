@@ -68,12 +68,12 @@ const CommentsForm = ( { slug } ) => {
                     <label htmlFor="storeData" className='text-gray-500 coursor-pointer ml-2'>Save my e-mail and name for the next time I comment.</label>
                 </div> 
             </div>
-            { error && <p className='text-xl text-red-500'>All fields are required</p> }
+            { error && <p className='text-sm md:text-lg lg:text-xl text-red-500'>All fields are required</p> }
             <div className='mt-8'>
                 <button type='button' onClick={ handleCommentSubmission } className='transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-800 text-lg rounded-full text-white px-8 py-3 courser-pointer' >
                     Post Comment
                 </button>
-                { showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>Comment Submitted for review</span> }
+                { showSuccessMessage && <span className='text-sm md:text-lg lg:text-xl float-right font-semibold mt-3 text-green-500'>Comment Submitted for review</span> }
             </div>
         </div>
     )
